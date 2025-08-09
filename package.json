@@ -1,0 +1,17 @@
+{
+    "name": "webhook-proxy",
+    "version": "1.0.0",
+    "main": "api/index.js",
+    "scripts": {
+        "start": "node api/index.js"
+    },
+    "dependencies": {
+        "@vercel/kv": "^1.0.1",
+        "axios": "^1.6.8",
+        "dotenv": "^17.2.1",
+        "express": "^4.19.2",
+        "express-rate-limit": "^7.2.0",
+        "ioredis": "^5.4.1",
+        "rate-limit-redis": "^4.2.0"
+    }
+}

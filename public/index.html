@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webhook Protector</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Webhook Protector</h1>
+        <p>Hide your Discord webhook URL to prevent it from being deleted or spammed.</p>
+        <form id="webhookForm">
+            <input type="url" id="webhookUrl" placeholder="Enter your Discord webhook URL" required>
+            <button type="submit">Protect My Webhook</button>
+        </form>
+        <div id="result" class="hidden">
+            <h2>Your New Protected URL:</h2>
+            <div class="url-box">
+                <input type="text" id="proxyUrl" readonly>
+                <button id="copyButton">Copy</button>
+            </div>
+            <p class="warning">Use this new URL in your applications. Do not share it publicly.</p>
+        </div>
+        <div id="error" class="hidden"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
